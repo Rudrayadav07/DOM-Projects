@@ -59,3 +59,6 @@ Works on all modern browsers:
 - **Desktop**: Full layout (>768px)
 - **Tablet**: Medium layout (481px - 768px)
 - **Mobile**: Compact layout (<480px)
+
+#project url 
+https://github.com/Rudrayadav07/DOM-Projects/tree/main/tabs
