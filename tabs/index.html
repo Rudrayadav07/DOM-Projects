@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabs Interface</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="tabs-wrapper">
+            <div class="tabs-header">
+                <button class="tab-button active" data-tab="tab1">First Tab</button>
+                <button class="tab-button" data-tab="tab2">Second Tab</button>
+                <button class="tab-button" data-tab="tab3">Third Tab</button>
+                <button class="tab-button" data-tab="tab4">Fourth Tab</button>
+            </div>
+
+            <div class="tabs-content">
+                <p class="description">Clicking each tab should hide the content of the other tab and show the content of clicked tab. By default, enable the first tab.</p>
+
+                <div id="tab1" class="tab-content active">
+                    <div class="content-box">
+                        <p>First Tab content to be displayed here.</p>
+                    </div>
+                    <p class="add-content">Add some dummy content or just add a simple text showing the tab</p>
+                </div>
+
+                <div id="tab2" class="tab-content">
+                    <div class="content-box">
+                        <p>Second Tab content to be displayed here.</p>
+                    </div>
+                    <p class="add-content">This is the second tab with its own unique content.</p>
+                </div>
+
+                <div id="tab3" class="tab-content">
+                    <div class="content-box">
+                        <p>Third Tab content to be displayed here.</p>
+                    </div>
+                    <p class="add-content">This is the third tab with different information.</p>
+                </div>
+
+                <div id="tab4" class="tab-content">
+                    <div class="content-box">
+                        <p>Fourth Tab content to be displayed here.</p>
+                    </div>
+                    <p class="add-content">This is the fourth and final tab with more content.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
