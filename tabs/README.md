@@ -62,3 +62,4 @@ Works on all modern browsers:
 
 #project url 
 https://github.com/Rudrayadav07/DOM-Projects/tree/main/tabs
+https://roadmap.sh/projects/simple-tabs
