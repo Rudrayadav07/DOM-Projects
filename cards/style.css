@@ -1,0 +1,139 @@
+/* CSS Variables */
+:root {
+  --color-bg: #222;
+  --color-card-border: #555;
+  --color-text: #fff;
+  --spacing-base: 10px;
+  --border-radius: 20px;
+  --card-width: 300px;
+  --card-height: 300px;
+}
+
+/* Reset & Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  background-color: var(--color-bg);
+}
+
+/* Main Container */
+#main {
+  min-height: 100%;
+  width: 100%;
+  padding: 2%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  align-content: flex-start;
+}
+
+/* Form Styles */
+form {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  background-color: rgba(0, 0, 0, 0.8);
+  padding: 20px;
+  border-radius: var(--border-radius);
+  z-index: 100;
+}
+
+input {
+  display: block;
+  width: 200px;
+  margin: var(--spacing-base);
+  padding: 8px;
+  border: 1px solid var(--color-card-border);
+  border-radius: 5px;
+  background-color: #333;
+  color: var(--color-text);
+  font-size: 14px;
+}
+
+input:focus {
+  outline: none;
+  border-color: #fff;
+  background-color: #444;
+}
+
+button {
+  background-color: #0066cc;
+  color: var(--color-text);
+  border: none;
+  padding: 10px 20px;
+  margin: var(--spacing-base);
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #0052a3;
+}
+
+/* Card Container */
+.card {
+  width: var(--card-width);
+  height: var(--card-height);
+  border: 1px solid var(--color-card-border);
+  border-radius: var(--border-radius);
+  padding: 20px;
+  color: var(--color-text);
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+}
+
+/* Profile Image */
+.profile {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Typography */
+h1 {
+  font-size: 18px;
+  margin: 0;
+}
+
+h3 {
+  font-size: 14px;
+  color: #aaa;
+  margin: 0;
+  font-weight: normal;
+}
+
+p {
+  font-size: 13px;
+  color: #ccc;
+  margin: 0;
+  flex-grow: 1;
+  overflow: hidden;
+}
